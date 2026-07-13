@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import NavBar from './NavBar';
+import axios from 'axios';
 
 const ViewFlight = () => {
   const [data, changeData] = useState([]);

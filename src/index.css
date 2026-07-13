@@ -1,0 +1,304 @@
+body{
+    background:#111827;
+    font-family:Segoe UI,sans-serif;
+    color:white;
+}
+
+.container{
+    margin-top:40px;
+}
+
+.row.g-3{
+    background:#1f2937;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 0 30px rgba(0,0,0,.5);
+}
+
+h2{
+    color:#22c55e;
+    margin-bottom:30px;
+}
+
+.form-label{
+    color:#d1d5db;
+}
+
+.form-control{
+    background:#374151;
+    border:none;
+    color:white;
+    padding:12px;
+}
+
+.form-control:focus{
+    background:#4b5563;
+    color:white;
+    box-shadow:0 0 8px #22c55e;
+}
+
+.btn-success{
+    width:100%;
+    padding:12px;
+    font-weight:bold;
+    border-radius:8px;
+}
+
+/* ===========================
+   Navbar
+=========================== */
+
+/* Navbar */
+.navbar {
+    background: #0f172a !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    padding: 12px 20px;
+}
+
+.navbar-brand {
+    color: #22c55e !important;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar-brand:hover {
+    color: #4ade80 !important;
+}
+
+/* Navigation Links */
+.navbar-nav .nav-link {
+    color: #d1d5db !important;
+    font-size: 16px;
+    margin: 0 8px;
+    padding: 8px 14px !important;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* Green Hover Effect */
+.navbar-nav .nav-link:hover {
+    color: #22c55e !important;
+    background: transparent;
+}
+
+/* Remove Green Box from Active Link */
+.navbar-nav .nav-link.active {
+    background: transparent !important;
+    color: #d1d5db !important;
+}
+
+/* Optional: Underline on Hover */
+.navbar-nav .nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #22c55e;
+    transition: width 0.3s ease;
+    margin-top: 4px;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+/* ===========================
+   Cards
+=========================== */
+
+.card {
+    background: #1b304d;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border: 2px solid #22c55e;
+    box-shadow:
+        0 0 8px #22c55e,
+        0 0 18px rgba(34,197,94,.7),
+        0 0 35px rgba(34,197,94,.4);
+}
+
+.card-header {
+    background: #103c9b;
+    color: #22c55e;
+    font-weight: bold;
+    border-bottom: 1px solid #374151;
+    padding: 15px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    color: #22c55e;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.card-text {
+    color: #d1d5db;
+    line-height: 1.6;
+}
+
+.card-footer {
+    background: #111827;
+    border-top: 1px solid #374151;
+    padding: 15px;
+}
+
+/* Buttons inside cards */
+
+.card .btn {
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.card .btn-success:hover {
+    transform: scale(1.05);
+}
+
+.card .btn-danger:hover {
+    transform: scale(1.05);
+}
+
+.card .btn-primary:hover {
+    transform: scale(1.05);
+}
+
+/* ===========================
+   Donor Table
+=========================== */
+
+.table-responsive {
+    background: #1f2937;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+}
+
+.table {
+    margin-bottom: 0;
+    color: #f9fafb;
+    border-color: #374151;
+}
+
+.table thead {
+    background: #22c55e;
+}
+
+.table thead th {
+    background: #22c55e !important;
+    color: #111827 !important;
+    font-weight: 700;
+    text-align: center;
+    border: 1px solid #16a34a;
+    vertical-align: middle;
+}
+
+.table tbody tr {
+    background: #1f2937;
+    transition: all 0.3s ease;
+}
+
+.table tbody tr:nth-child(even) {
+    background: #263445;
+}
+
+.table tbody tr:hover {
+    background: #334155 !important;
+    transform: scale(1.01);
+    box-shadow: inset 0 0 0 2px #22c55e;
+}
+
+.table td {
+    color: #e5e7eb;
+    border: 1px solid #374151;
+    vertical-align: middle;
+    padding: 14px;
+}
+
+.table th {
+    padding: 14px;
+}
+
+.table tbody tr td:first-child {
+    font-weight: bold;
+    color: #22c55e;
+}
+
+/* Scrollbar for Responsive Table */
+
+.table-responsive::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: #111827;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background: #22c55e;
+    border-radius: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+    background: #16a34a;
+}
+
+/* Optional Badge Style */
+
+.blood-group {
+    background: #22c55e;
+    color: #111827;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* ===========================
+   Loading Screen
+=========================== */
+
+.loading-container {
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loading-spinner {
+    width: 70px;
+    height: 70px;
+    border-width: 6px;
+}
+
+.loading-text {
+    color: #22c55e;
+    font-weight: 600;
+    letter-spacing: 1px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
